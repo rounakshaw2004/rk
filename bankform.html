@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ICICI Bank - Account Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        h1 {
+            color: #4a4a4a;
+            font-weight: normal;
+            margin-top: 20px;
+            text-align: center;
+        }
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], input[type="tel"], textarea {
+            width: calc(100% - 24px);
+            padding: 12px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        input[type="submit"]
+         {
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px 40px;
+            margin: 20px 0;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            background-color: green;
+        }
+        sup {
+            color: red;
+            font-size: 14px;
+        }
+    </style>
+    <script type="text/javascript">
+        function msg()
+        {
+            alert("FORM SUBMITED ");
+        }
+    </script>
+</head>
+<body>
+    <h1>ICICI Bank - Debit Card Apply Form</h1>
+    <form>
+        <table>
+            <tr>
+                <td>CUSTOMER ID:<sup>*</sup></td>
+                <td><input type="text" name="customer_id" required ></td>
+            </tr>
+            <tr>
+                <td>ACCOUNT:<sup>*</sup></td>
+                <td><input type="text" name="account" required></td>
+            </tr>
+            <tr>
+                <td>PHONE NUMBER:<sup>*</sup></td>
+                <td><input type="text" name="phone_number" required></td>
+            </tr>
+            <tr>
+                <td>CONTACT NUMBER:<sup>*</sup></td>
+                <td><input type="tel" name="contact_number" required></td>
+            </tr>
+            <tr>
+                <td>ADDRESS::<sup>*</sup></td>
+                <td><textarea name="address" required></textarea></td>
+            </tr>
+            <tr>
+                <td>CITY::<sup>*</sup></td>
+                <td><input type="text" name="city" required></td>
+            </tr>
+            <tr>
+                <td>STATE::<sup>*</sup></td>
+                <td><input type="text" name="state" required></td>
+            </tr>
+            <tr>
+                <td>ZIP CODE::<sup>*</sup></td>
+                <td><input type="text" name="zip_code"  required></td>
+            </tr>
+            <tr>
+                <tr>
+                    <td>CARD SELECT::<sup>*</sup></td>
+                    <td><input type="radio" name="card">Platinum  Visa card
+                        <input type="radio" name="card">Classic  Visa card
+                        <input type="radio" name="card">Classic  Rupay card
+                    </td>
+                </tr>
+                <tr>
+                <td colspan="2" style="text-align:center;"><input type="submit" value="Submit " onclick="msg()"/></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
